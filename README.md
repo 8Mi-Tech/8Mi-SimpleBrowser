@@ -1,7 +1,7 @@
 # 8Mi-Browser
 
     这个项目基于Qt+DTk开发
-    是为Deepin用户使用8Mi-ClashController有一种统一的视觉感
+    是为 Deepin&UOS 用户使用8Mi-ClashController有一种统一的视觉感
     当然了，这个也可以给Ventoy的WebUI用（逃）
 
 ---
