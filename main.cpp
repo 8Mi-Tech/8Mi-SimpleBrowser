@@ -1,0 +1,48 @@
+#include "mainwindow.h"
+#include <DApplication>
+#include <QDesktopWidget>
+#include <DWidgetUtil>  //Dtk::Widget::moveToCenter(&w); 要调用它，就得引用DWidgetUtil
+#include <qcef/qcef_util.h>
+
+
+DWIDGET_USE_NAMESPACE
+int main(int argc, char *argv[])
+{
+//    QCefGlobalSettings();
+    QCefGlobalSettings cef_settings;
+
+    cef_settings.setNoSandbox(false);
+    cef_settings.addCommandLineSwitch("", "");
+    cef_settings.setNoProxy();
+    const int exit_code = QCefInit(argc, argv, cef_settings);
+        if (exit_code >= 0) {
+          return exit_code;
+        }
+
+    DApplication::loadDXcbPlugin();  //让bar处在标题栏中
+    DApplication dtk(argc, argv);
+     dtk.setAttribute(Qt::AA_UseHighDpiPixmaps);
+     dtk.loadTranslator();
+     dtk.setOrganizationName("8Mi-Tech");
+     dtk.setApplicationVersion(DApplication::buildVersion("1.0"));
+     dtk.setApplicationAcknowledgementPage("https://blog.8mi.tech");
+     //dtk.setProductIcon(QIcon(":/images/icon.svg"));  //设置Logo
+     dtk.setProductName("8Mi-Browser");
+     dtk.setApplicationName("8Mi-Browser"); //只有在这儿修改窗口标题才有效
+     dtk.setApplicationLicense("GPL-2.0");
+     dtk.setApplicationDescription("8Mi-Browser只是一个单页面的CEF的浏览器");
+     dtk.setApplicationAcknowledgementVisible(true);
+
+    MainWindow w;
+    w.setMinimumSize(800, 600);
+    w.show();
+    w.move((QApplication::desktop()->width() - w.width()) / 2,
+           (QApplication::desktop()->height() - w.height()) / 2);
+
+    //让打开时界面显示在正中
+    Dtk::Widget::moveToCenter(&w);
+
+    QCefBindApp(&dtk);
+
+    return dtk.exec();
+}
