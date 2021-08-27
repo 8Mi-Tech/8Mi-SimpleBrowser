@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
      //dtk.setProductIcon(QIcon(":/images/icon.svg"));  //设置Logo
      dtk.setProductName("8Mi-Browser");
      dtk.setApplicationName("8Mi-Browser"); //只有在这儿修改窗口标题才有效
-     dtk.setApplicationLicense("GPL-2.0");
+     dtk.setApplicationLicense("GPL-3.0");
      dtk.setApplicationDescription("8Mi-Browser只是一个单页面的CEF的浏览器");
      dtk.setApplicationAcknowledgementVisible(true);
 
