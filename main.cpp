@@ -27,10 +27,10 @@ int main(int argc, char *argv[])
      dtk.setApplicationVersion(DApplication::buildVersion("1.0"));
      dtk.setApplicationAcknowledgementPage("https://blog.8mi.tech");
      //dtk.setProductIcon(QIcon(":/images/icon.svg"));  //设置Logo
-     dtk.setProductName("8Mi-Browser");
-     dtk.setApplicationName("8Mi-Browser"); //只有在这儿修改窗口标题才有效
+     dtk.setProductName("8Mi-SimpleBrowser");
+     dtk.setApplicationName("8Mi-SimpleBrowser"); //只有在这儿修改窗口标题才有效
      dtk.setApplicationLicense("GPL-3.0");
-     dtk.setApplicationDescription("8Mi-Browser只是一个单页面的CEF的浏览器");
+     dtk.setApplicationDescription("8Mi-SimpleBrowser只是一个单页面的CEF的浏览器");
      dtk.setApplicationAcknowledgementVisible(true);
 
     MainWindow w;

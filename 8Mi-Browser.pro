@@ -8,7 +8,7 @@ QT       += core gui webkitwidgets
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = 8Mi-Browser
+TARGET = 8Mi-SimpleBrowser
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use

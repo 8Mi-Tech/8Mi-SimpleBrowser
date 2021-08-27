@@ -1,4 +1,4 @@
-# 8Mi-Browser
+# 8Mi-SimpleBrowser
 
     这个项目基于Qt+DTk开发
     是为 Deepin&UOS 用户使用8Mi-ClashController有一种统一的视觉感
