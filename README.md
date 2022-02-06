@@ -11,13 +11,19 @@
     
 ---
 ## 开发平台和依赖说明
-    开发平台：Deepin or UOS => 20
-    Qt版本：Qt => 5.15.1
+### 开发平台：Deepin or UOS => 20
+### Qt版本：Qt => 5.15.1
 
+<<<<<<< HEAD
     依赖：
     sudo apt install libdtkwidget-dev libdtkcore-dev dh-make
     sudo apt install libdframeworkdbus-dev libqrencode-dev libzbar-dev libdtkwm-dev libdtkcore-bin  libqtshadowsocks-dev fakeroot
     sudo apt install qtwebengine5-dev qtwebengine5-private-dev
+=======
+### 依赖：
+    sudo apt install libdtkwidget-dev libdtkcore-dev dh-make libdframeworkdbus-dev libqrencode-dev \
+    libzbar-dev libdtkwm-dev libdtkcore-bin fakeroot libqcef-dev
+>>>>>>> d94787031114d6b13570da9ace1839a8a6d5e46e
 ---
 ## 鸣谢如下项目
     https://github.com/ziqiangxu/QCefDemo
