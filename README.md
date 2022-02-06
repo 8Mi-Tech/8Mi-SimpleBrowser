@@ -15,8 +15,9 @@
     Qt版本：Qt => 5.15.1
 
     依赖：
-    sudo apt-get install libdtkwidget-dev libdtkcore-dev dh-make
-    sudo apt-get install libdframeworkdbus-dev libqrencode-dev libzbar-dev libdtkwm-dev libdtkcore-bin  libqtshadowsocks-dev fakeroot
+    sudo apt install libdtkwidget-dev libdtkcore-dev dh-make
+    sudo apt install libdframeworkdbus-dev libqrencode-dev libzbar-dev libdtkwm-dev libdtkcore-bin  libqtshadowsocks-dev fakeroot
+    sudo apt install qtwebengine5-dev qtwebengine5-private-dev
 ---
 ## 鸣谢如下项目
     https://github.com/ziqiangxu/QCefDemo
